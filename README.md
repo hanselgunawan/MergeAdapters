@@ -1,4 +1,4 @@
-# Merge Adapters
+# Merge Adapter
 
 ## What is `MergeAdapter` ?
 `MergeAdapter` reduces the friction when you want to "merge" multiple adapters "sequentially" within a `RecyclerView`. 
