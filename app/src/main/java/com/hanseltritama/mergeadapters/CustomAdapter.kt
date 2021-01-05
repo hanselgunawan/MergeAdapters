@@ -34,14 +34,14 @@ class CustomAdapter(val context: Context, val news: List<EntityNews>) : Recycler
 
             try {
                 val imageUrl: URL = URL(news.thumb)
-                Log.d("image_url", imageUrl + "") // check whether the URL works or not
+                Log.d("image_url", imageUrl.toString()) // check whether the URL works or not
                 val options: RequestOptions = RequestOptions()
                     .centerCrop()
                     .placeholder(R.mipmap.ic_launcher_round)
                     .error(R.mipmap.ic_launcher_round)
                 Glide.with(context).load(imageUrl).apply(options).into(itemView.img_thumb)
             } catch (e: Exception) {
-                Log.d("error", e+"")
+                Log.d("error", e.toString())
             }
         }
     }
